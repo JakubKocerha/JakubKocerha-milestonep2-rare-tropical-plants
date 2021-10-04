@@ -1,6 +1,7 @@
 Bugs
 
-
+mention it in testing
+Position an element at the top of the viewport, from edge to edge, but only after you scroll past it. The .sticky-top utility uses CSS’s position: sticky, which isn’t fully supported in all browsers.
 
 
 Credits

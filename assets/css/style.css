@@ -15,40 +15,46 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    
 }
 
 h1 {
     font-family: MonteCarlo, sans-serif;
     font-size: 50px;
-    color: rgb(248, 248, 255);
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
+    color: rgb(255, 255, 255);
+    height: 300px;
+    font-weight: 400;
+  
+
+    text-align: center;
     margin: 0 auto;
-    padding: 0;
+    padding: 15px;
+    padding-top: 150px;
 }
 
 /* Navbar */
 .menu {
-    background-color: rgba(201, 141, 81, 0.4);
+    background-color: rgba(201, 141, 81, 0.9);
     min-height: 500px;
     padding: 0;
     border-right: 2px solid rgb(248 248 255);
 }
 
+.nav li {
+    width: 100%;
+}
+
 .nav-link {
-    color: black;
+    color:rgb(255, 255, 255);
 }
 
 .nav-link:hover{
-    color: rgb(244, 232, 220);
-    background-color: #c98d51;
+    color: rgb(255, 255, 255);
+    background-color: rgba(90, 64, 38, 0.5);
+    
 }
 
-.nav-item:hover {
-    background-color: rgb(244, 232, 220);
-    color: rgba(201, 141, 81, 1);
-}
+
 
 .dropdown-menu {
     background-color: rgb(244, 232, 220);
@@ -59,17 +65,37 @@ h1 {
     background-color: #c98d51;
 }
 .active {
-    background-color: rgba(201, 141, 81, 1);
+    background-color: rgba(161, 109, 56, 0.5);
+    color: rgb(255, 255, 255);
 }
+
+/* main section of the site */
 .main-content1 {
     background-color: rgba(201, 141, 81, 0.2);
     min-height: 500px;
     padding: 15px 0;
+    margin: 0;
 }
+
+.main-content1 div{
+    
+    margin: 0;
+}
+
+.media-body p {
+    text-align: justify;
+}
+
+.media-body h4 {
+    padding-left: 30px;
+}
+
+
+
 
 /* footer styling */
 .footer-style {
-    background-color:rgba(201, 141, 81, 1);
+    background-color:rgba(201, 141, 81, 0.9);
     padding: 0;
 }
 
@@ -87,3 +113,41 @@ h1 {
     text-align: center;
     vertical-align: middle;
 }
+
+@media only screen and (max-width: 575px) {
+    
+    /*fullwidth inline navbar menu for small devices for small devices, with a help of Crome tools*/
+    .nav li{
+        display: inline;
+        width: 25%;
+        text-align: center;
+    }
+    
+    .menu {
+        min-height: 40px;
+        max-height: 40px;
+        border-right: none;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    .nav li{
+        display: inline;
+        width: 50%;
+        text-align: center;
+    }
+    .menu {
+        min-height: 80px;
+        max-height: 80px;
+        border-right: none;
+    }
+/* flex direction used as suggestion from Google DevTools */
+    .media {
+        flex-direction: column;
+    }
+    .media-body h4 {
+        text-align: center;
+        padding: 0 20px;
+    }
+}
+    
