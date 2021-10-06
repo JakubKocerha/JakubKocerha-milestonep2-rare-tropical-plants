@@ -42,6 +42,7 @@ h1 {
 
 .nav li {
     width: 100%;
+    
 }
 
 .nav-link {
@@ -51,10 +52,7 @@ h1 {
 .nav-link:hover{
     color: rgb(255, 255, 255);
     background-color: rgba(90, 64, 38, 0.5);
-    
 }
-
-
 
 .dropdown-menu {
     background-color: rgb(244, 232, 220);
@@ -75,10 +73,11 @@ h1 {
     min-height: 500px;
     padding: 15px 0;
     margin: 0;
+    border-bottom: 2px solid rgb(248 248 255);
+    border-top: 2px solid rgb(248 248 255);
 }
 
-.main-content1 div{
-    
+.main-content1 div {
     margin: 0;
 }
 
