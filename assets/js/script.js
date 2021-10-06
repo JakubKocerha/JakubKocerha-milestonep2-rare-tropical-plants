@@ -22,7 +22,7 @@ $(document).ready(function () {
         } else {
             alert('Something went wrong');
         }
-        $(window).scrollTop();
+        $(window).scrollTop();//it worked on one element, but javascript doesn't responde now.
     });
     $('#home').click(function () {
         /*$('.media').filter('.syngo,.monstera,.philo').show();//Here I need a default(homepage content of .media class) content of all divs.*/
