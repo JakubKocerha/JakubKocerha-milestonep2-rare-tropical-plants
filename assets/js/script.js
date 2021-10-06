@@ -1,14 +1,32 @@
 
 $(document).ready(function () {
+    
     $('.dropdown-item').click(function () {
         if ($(this).hasClass('philodendron')) {
-            alert('hapa');//Here I need the code to see only divs having the class criteria
+            /*let plantA = $('main-content1').children('div').hide();    this variable was not needed at the end*/
+            $('.media').filter('.syngo,.monstera').hide();
+            $('.media').filter('.philo').show();
+            
+            //alert('hapa');  Here I need the code to see only divs having the class criteria
         } else if ($(this).hasClass('monsteras')) {
-            alert('papa');//The same here
+            $('.media').filter('.philo,.syngo').hide();
+            $('.media').filter('.monstera').show();
+            
+            //alert('papa');  The same here
         } else if ($(this).hasClass('syngonium')) {
-            alert('hobo');//The same here
+            $('.media').filter('.philo,.monstera').hide();
+            $('.media').filter('.syngo').show();
+            
+            
+            //alert('coco'); The same here
         } else {
-            alert('hura');//Here I need a default sequence of all divs.
+            alert('Something went wrong');
         }
+        $(window).scrollTop();
     });
-});
+    $('#home').click(function () {
+        /*$('.media').filter('.syngo,.monstera,.philo').show();//Here I need a default(homepage content of .media class) content of all divs.*/
+        location.reload('true');// on stackoverflow.com shorcut for filter above.
+    });
+})
+
