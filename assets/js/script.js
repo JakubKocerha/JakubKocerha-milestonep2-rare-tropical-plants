@@ -13,16 +13,19 @@ $(document).ready(function () {
 
 
         //$('.white-knight').slideUp('slow');
-
-
     });
+
+
+
     $('.hide-knight').click(function () {
         // button click hides button and opens default info about the plant
         $('.button-gen').hide();
         //appends details about plant
         $('.knight-p').show();
         $('.details-wk').show();
-
+        $('.close-window').click(function () {
+            $('.details-wk').hide();
+        });
 
 
         /*$(".media-body").click(function () {
