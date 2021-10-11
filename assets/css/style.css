@@ -4,6 +4,14 @@ body {
     font-family: Oswald, sans-serif;
 }
 
+
+/* JS classes*/
+
+.button-general {
+    background-color: rgba(161, 109, 56, 0.5);
+    color:rgb(255, 255, 255);
+    display: none;
+}
 /* main header */
 
 #main-heading {
@@ -140,10 +148,10 @@ h1 {
         max-height: 80px;
         border-right: none;
     }
-/* flex direction used as suggestion from Google DevTools */
+/* flex direction used as suggestion from Google DevTools 
     .media {
         flex-direction: column;
-    }
+    }*/
     .media-body h4 {
         text-align: center;
         padding: 0 20px;
