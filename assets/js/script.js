@@ -1,21 +1,15 @@
 $(document).ready(function () {
-    /*$('.media').hover( function () {
-        $("this.media>div").css({backgroundColor: "#ffe"});
-    
-       // $('this.div').append($('<div>test</div>'));
-    });*/
+
+    /* -Interactive content container- */
+
+    /* --Eventlisteners for container in .white-kn-- */
+
     $(".white-kn").mouseenter(function () {
         // onmouse event listener hides <p> with general info and opens a button leading user further.
         $('.knight-p').hide();
         $('.button-gen').show();
-        $('.white-kn').css('background-color', '#f5ba7e');//!!!!!! last line!!!
-
-
-
-        //$('.white-knight').slideUp('slow');
+        $('.white-kn').css('background-color', '#f5ba7e');
     });
-
-
 
     $('.hide-knight').click(function () {
         // button click hides button and opens default info about the plant
@@ -26,14 +20,6 @@ $(document).ready(function () {
         $('.close-window').click(function () {
             $('.details-wk').hide();
         });
-
-
-        /*$(".media-body").click(function () {
-            $(".details-wk").toggle("slow", function () {
-                // Animation complete.
-            });
-        });*/
-
     });
 
     $(".white-kn").mouseleave(function () {
@@ -42,8 +28,40 @@ $(document).ready(function () {
         $('.button-gen').hide();
         $('.details-wk').hide(); //erases the info appended in click function
         $('.white-kn').css('background-color', 'transparent');
-    
     });
+
+
+
+
+    /* --Eventlisteners for container in .thai-co-- */
+    
+    $(".thai-co").mouseenter(function () {
+        // onmouse event listener hides <p> with general info and opens a button leading user further.
+        $('.thai-p').hide();
+        $('.button-thai').show();
+        $('.thai-co').css('background-color', '#f5ba7e');
+    });
+
+    $('.hide-thai').click(function () {
+        // button click hides button and opens default info about the plant
+        $('.button-thai').hide();
+        //appends details about plant
+        $('.thai-p').show();
+        $('.details-co').show();
+        $('.close-window').click(function () {
+            $('.details-co').hide();
+        });
+    });
+
+    $(".thai-co").mouseleave(function () {
+        // triggers default info about the plant onmouse leave
+        $('.thai-p').show();
+        $('.button-thai').hide();
+        $('.details-co').hide(); //erases the info appended in click function
+        $('.thai-co').css('background-color', 'transparent');
+    });
+
+
 
 
 
