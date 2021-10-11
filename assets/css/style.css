@@ -6,17 +6,27 @@ body {
 
 
 /* JS classes*/
+.details-wk {
+    display: none;
+}
 
-.button-general {
-    background-color: rgba(161, 109, 56, 0.5);
+
+
+
+
+.button-gen {
+    background-color: rgba(206, 152, 98, 0.9);
     color:rgb(255, 255, 255);
     display: none;
+    
+    
 }
 /* main header */
 
 #main-heading {
     background-image: url("../images/hero.jpg");
     background-color:rgba(0, 0, 0, 0.5);
+    color:rgb(255, 255, 255);
     height: 300px;
   /* Code taken from CI tutorial*/
     background-position: center;
@@ -76,17 +86,26 @@ h1 {
 }
 
 /* main section of the site */
+.container-fluid {
+    padding: 0;
+}
+
 .main-content1 {
-    background-color: rgba(201, 141, 81, 0.2);
+    background-color:rgb(250, 228, 203);
     min-height: 500px;
-    padding: 15px 0;
-    margin: 0;
+    padding-bottom: 15px;
+    color:rgba(0, 0, 0);
+    
     border-bottom: 2px solid rgb(248 248 255);
     border-top: 2px solid rgb(248 248 255);
 }
 
-.main-content1 div {
-    margin: 0;
+.media img {
+    padding-left: 15px;
+}
+.media-body {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .media-body p {
@@ -96,6 +115,19 @@ h1 {
 .media-body h4 {
     padding-left: 30px;
 }
+/* Plant details */
+.details-wk p {
+    font-size: 17px;
+}
+.details-wk h6 {
+    font-size: 23px;
+}
+/* CSS for icons*/
+.icon-col {
+    color:rgba(68, 167, 65, 0.671);
+}
+
+
 
 
 
@@ -122,7 +154,10 @@ h1 {
 }
 
 @media only screen and (max-width: 575px) {
-    
+    .media {
+        flex-direction: column;
+    }
+
     /*fullwidth inline navbar menu for small devices for small devices, with a help of Crome tools*/
     .nav li{
         display: inline;
@@ -148,10 +183,11 @@ h1 {
         max-height: 80px;
         border-right: none;
     }
-/* flex direction used as suggestion from Google DevTools 
+    
+    /*flex direction used as suggestion from Google DevTools */
     .media {
         flex-direction: column;
-    }*/
+    }
     .media-body h4 {
         text-align: center;
         padding: 0 20px;

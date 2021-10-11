@@ -7,23 +7,39 @@ $(document).ready(function () {
     $(".white-kn").mouseenter(function () {
         // onmouse event listener hides <p> with general info and opens a button leading user further.
         $('.knight-p').hide();
-        $('.white-knight').show();
+        $('.button-gen').show();
+        $('.white-kn').css('background-color', '#f5ba7e');//!!!!!! last line!!!
+
+
+
         //$('.white-knight').slideUp('slow');
-        
+
 
     });
     $('.hide-knight').click(function () {
         // button click hides button and opens default info about the plant
-        $('.white-knight').hide();
-        $('.knight-p').append('<div><p>test</p></div>').show();//appends details about plant
-    
+        $('.button-gen').hide();
+        //appends details about plant
+        $('.knight-p').show();
+        $('.details-wk').show();
+
+
+
+        /*$(".media-body").click(function () {
+            $(".details-wk").toggle("slow", function () {
+                // Animation complete.
+            });
+        });*/
+
     });
 
     $(".white-kn").mouseleave(function () {
         // triggers default info about the plant onmouse leave
         $('.knight-p').show();
-        $('.white-knight').hide();
-        $('.knight-p>div').remove();//erases the info appended in click function
+        $('.button-gen').hide();
+        $('.details-wk').hide(); //erases the info appended in click function
+        $('.white-kn').css('background-color', 'transparent');
+    
     });
 
 
@@ -49,7 +65,7 @@ $(document).ready(function () {
             $('.media').filter('.syngo').show();
             //alert('coco'); The same here
         } else {
-            alert('Something went wrong');
+            alert('Something went wrong! Refresh your page.');
         }
 
 
