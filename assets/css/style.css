@@ -109,28 +109,55 @@ h1 {
 }
 /* Plant details */
 .details-wk,
-.details-co {
+.details-co,
+.details-wh,
+.details-pi,
+.details-sc,
+.details-al,
+.details-sa {
     display: none;
 }
 
 .details-wk p,
-.details-co p {
+.details-co p,
+.details-wh p,
+.details-pi p,
+.details-sc p,
+.details-al p,
+.details-sa p {
     font-size: 17px;
 }
+
 .details-wk h6,
-.details-co h6 {
+.details-co h6,
+.details-wh h6,
+.details-pi h6,
+.details-sc h6,
+.details-al h6,
+.details-sa h6 {
     font-size: 23px;
 }
 
-.details-wk button
-.details-co button {
+.details-wk button,
+.details-co button,
+.details-wh button,
+.details-pi button,
+.details-sc button,
+.details-al button,
+.details-sa button {
     text-align: center;
 }
 
 
 /* JS classes*/
 
-.button-gen, .button-thai {
+.button-gen,
+.button-thai,
+.button-pr-wh,
+.button-pr-pi,
+.button-sy-co,
+.button-mo-al,
+.button-sy-al {
     background-color: rgba(206, 152, 98, 0.9);
     color:rgb(255, 255, 255);
     display: none; 
