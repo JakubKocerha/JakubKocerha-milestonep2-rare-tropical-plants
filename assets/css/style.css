@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=MonteCarlo&family=Oswald&display=swap');
 
+
+
+/* #map target div for Google maps and body/html style for 
+correct sizing of target elements - https://developers.google.com/maps/documentation/javascript/overview */
+#map {
+    height: 100%,
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* font for the main content of the site */
 body {
     font-family: Oswald, sans-serif;
 }
@@ -198,6 +214,11 @@ h1 {
         flex-direction: column;
     }
 
+    .media-body h4 {
+        padding-left: 0;
+        letter-spacing: 5px;
+    }
+
     /*fullwidth inline navbar menu for small devices for small devices, with a help of Crome tools*/
     .nav li{
         display: inline;
@@ -230,7 +251,7 @@ h1 {
     }
     .media-body h4 {
         text-align: center;
-        padding: 0 20px;
+        
     }
 }
     
