@@ -4,9 +4,7 @@
 
 /* #map target div for Google maps and body/html style for 
 correct sizing of target elements - https://developers.google.com/maps/documentation/javascript/overview */
-#map {
-    height: 100%,
-}
+
 
 html, body {
     height: 100%;
@@ -182,9 +180,19 @@ h1 {
 .icon-col {
     color:rgba(68, 167, 65, 0.671);
 }
+/* Google Maps  */
 
-
-
+#map-a,
+#map-b,
+#map-c,
+#map-d,
+#map-e,
+#map-f,
+#map-g {
+    height: 400px;
+    width: 100%;
+    color: black;
+}
 
 
 
