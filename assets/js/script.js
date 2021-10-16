@@ -209,8 +209,11 @@ $(document).ready(function () {
 
 // Filtering of required content items and setting active class into the Plants button
     $('.dropdown-item').click(function () {
+        
+        // button Plants/Home .active class
         $('.active').removeClass('active');
         $('.dropdown').addClass('active');
+        // filters for dropdown items
         if ($(this).hasClass('philodendron')) {
             /*let plantA = $('main-content1').children('div').hide();    this variable was not needed at the end*/
             $('.media').filter('.syngo,.monstera').hide();

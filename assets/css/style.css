@@ -43,7 +43,6 @@ body {
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
-
 }
 
 /* Keyframe code from CI tutorials */
@@ -72,7 +71,7 @@ h1 {
 
 /* Navbar */
 .menu {
-    background-color: rgba(201, 141, 81, 0.9);
+    background-color: rgba(201, 141, 81);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -302,7 +301,7 @@ h1 {
 
 /* footer styling */
 .footer-style {
-    background-color: rgba(201, 141, 81, 0.9);
+    background-color: rgba(201, 141, 81);
     padding: 0;
 }
 
