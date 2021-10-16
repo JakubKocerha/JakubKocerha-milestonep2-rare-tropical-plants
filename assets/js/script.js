@@ -34,7 +34,7 @@ $(document).ready(function () {
 
 
     /* --Eventlisteners for container in .thai-co-- */
-    
+
     $(".thai-co").mouseenter(function () {
         // onmouse event listener hides <p> with general info and opens a button leading user further.
         $('.thai-p').hide();
@@ -63,7 +63,7 @@ $(document).ready(function () {
 
 
     /* --Eventlisteners for container in .princess-wh-- */
-    
+
     $(".princess-wh").mouseenter(function () {
         // onmouse event listener hides <p> with general info and opens a button leading user further.
         $('.princess-wh-p').hide();
@@ -92,7 +92,7 @@ $(document).ready(function () {
 
 
     /* --Eventlisteners for container in .princess-pi-- */
-    
+
     $(".princess-pi").mouseenter(function () {
         // onmouse event listener hides <p> with general info and opens a button leading user further.
         $('.princess-pi-p').hide();
@@ -121,7 +121,7 @@ $(document).ready(function () {
 
 
     /* --Eventlisteners for container in .syngonium-co -- */
-    
+
     $(".syngonium-co").mouseenter(function () {
         // onmouse event listener hides <p> with general info and opens a button leading user further.
         $('.syngonium-co-p').hide();
@@ -150,7 +150,7 @@ $(document).ready(function () {
 
 
     /* --Eventlisteners for container in .monstera-al -- */
-    
+
     $(".monstera-al").mouseenter(function () {
         // onmouse event listener hides <p> with general info and opens a button leading user further.
         $('.monstera-al-p').hide();
@@ -179,7 +179,7 @@ $(document).ready(function () {
 
 
     /* --Eventlisteners for container in .syngonium-al -- */
-    
+
     $(".syngonium-al").mouseenter(function () {
         // onmouse event listener hides <p> with general info and opens a button leading user further.
         $('.syngonium-al-p').hide();
@@ -215,12 +215,12 @@ $(document).ready(function () {
 
 
     $('.dropdown-item').click(function () {
-        
+
         if ($(this).hasClass('philodendron')) {
             /*let plantA = $('main-content1').children('div').hide();    this variable was not needed at the end*/
             $('.media').filter('.syngo,.monstera').hide();
             $('.media').filter('.philo').show();
-            
+
 
             //alert('hapa');  Here I need the code to see only divs having the class criteria
         } else if ($(this).hasClass('monsteras')) {
@@ -238,12 +238,15 @@ $(document).ready(function () {
 
     });
 
+    $('#home').click(function () { 
+        /*$('.media').filter('.syngo,.monstera,.philo').show();//Here I need a default(homepage content of .media class) content of all divs.*/ 
+        location.reload(0); // on stackoverflow.com shorcut for filter above.  
+        //$(window).scrollTop();//it worked on one element, but javascript doesn't responde now.
+    });
 
 
 
 
 
-    
-    
 
 });

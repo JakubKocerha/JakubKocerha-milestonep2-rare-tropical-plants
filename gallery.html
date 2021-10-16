@@ -37,7 +37,7 @@
                 <div class="col-12 col-sm-2 sticky-top menu">
                     <ul class="nav">
                         <li class="nav-item">
-                            <a id="home" class="nav-link" href="#index.html">Home</a>
+                            <a id="home" class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -54,41 +54,46 @@
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#gallery.html">Gallery</a>
+                            <a class="nav-link active" href="gallery.html">Gallery</a>
                         </li>
                     </ul>
                 </div>
-                
+
                 <!-- Gallery - https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp -->
-                <div class="col-12 col-sm-10 main-content1">
-                    <div class="row">
-                        <div class="col-4 col-sm-6">
-                            <img src="img_nature.jpg" alt="Nature" onclick="myFunction(this);">
+                <div class="col-12 col-sm-10 main-content1 background">
+                    <div class="row picture text-center no-gutters">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-style">
+                            <img src="assets/images/gallery-pink.jpg" alt="Philodendron Pink Princess" onclick="myFunction(this);">
                         </div>
-                        <div class="col-4 col-sm-6">
-                            <img src="img_snow.jpg" alt="Snow" onclick="myFunction(this);">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-style">
+                            <img src="assets/images/gallery-thai.jpg" alt="Monstera Thai Constellation" onclick="myFunction(this);">
                         </div>
-                        <div class="col-4 col-sm-6">
-                            <img src="img_mountains.jpg" alt="Mountains" onclick="myFunction(this);">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-style">
+                            <img src="assets/images/gallery-whiteb.jpg" alt="Philodendron White Princess" onclick="myFunction(this);">
                         </div>
-                        <div class="col-4 col-sm-6">
-                            <img src="img_lights.jpg" alt="Lights" onclick="myFunction(this);">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-style">
+                            <img src="assets/images/gallery-whitec.jpg" alt="Philodendron White Princess - tricolor" onclick="myFunction(this);">
                         </div>
+                        
                     </div>
 
-                    <!-- The expanding image container -->
-                    <div class="container">
-                        <!-- Close the image -->
-                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <div class="row no-gutters">
 
-                        <!-- Expanded image -->
-                        <img id="expandedImg" style="width:100%">
+                        <!-- The expanding image container -->
+                        <div class="col-12 container text-center">
+                            <!-- Close the image -->
+                            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 
-                        <!-- Image text -->
-                        <div id="imgtext"></div>
+                            <!-- Expanded image -->
+                            <img id="expandedImg" style="width:100%">
+
+                            <!-- Image text -->
+                            <div id="imgtext"></div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
 
 
@@ -136,8 +141,8 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnGy5Xb33_3k-h6ddDVVzskCkYqE3vKjc&callback=initMap">
     </script>
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/maps.js"></script>
-    
+    <script src="assets/js/gallery.js"></script>
+
 
     <script async
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnGy5Xb33_3k-h6ddDVVzskCkYqE3vKjc&callback=initMap">
