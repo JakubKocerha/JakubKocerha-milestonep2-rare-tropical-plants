@@ -9,6 +9,7 @@ $(document).ready(function () {
         $('.knight-p').hide();
         $('.button-gen').show();
         $('.white-kn').css('background-color', '#f5ba7e');
+
     });
 
     $('.hide-knight').click(function () {
@@ -206,36 +207,24 @@ $(document).ready(function () {
         $('.syngonium-al').css('background-color', 'transparent');
     });
 
-
-
-
-
-
-
-
-
+// Filtering of required content items and setting active class into the Plants button
     $('.dropdown-item').click(function () {
-
+        $('.active').removeClass('active');
+        $('.dropdown').addClass('active');
         if ($(this).hasClass('philodendron')) {
             /*let plantA = $('main-content1').children('div').hide();    this variable was not needed at the end*/
             $('.media').filter('.syngo,.monstera').hide();
             $('.media').filter('.philo').show();
-
-
-            //alert('hapa');  Here I need the code to see only divs having the class criteria
         } else if ($(this).hasClass('monsteras')) {
             $('.media').filter('.philo,.syngo').hide();
             $('.media').filter('.monstera').show();
-            //alert('papa');  The same here
         } else if ($(this).hasClass('syngonium')) {
             $('.media').filter('.philo,.monstera').hide();
             $('.media').filter('.syngo').show();
-            //alert('coco'); The same here
         } else {
             alert('Something went wrong! Refresh your page.');
         }
-        // $('.drop-active').addClass('.active');
-
+        
     });
 
     $('#home').click(function () { 
