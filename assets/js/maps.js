@@ -1,6 +1,9 @@
-function initMap() {
-    // Maps initial options for different containers
 
+
+
+function initMap() {
+    // Maps initial options for different containers 
+    // var option* content from youtube.com https://www.youtube.com/watch?v=Zxf1mnP5zcw&t=96s - Traversy media
     // default map view of North/South America
     var option1 = {
         zoom: 3,
@@ -39,6 +42,7 @@ function initMap() {
         center: {lat: 14.437863, lng:  -84.752535}
     };
 
+    // The rest of the content bellow coded with a sample on Google API - documentation
     // New map for each container
     var mapA = new google.maps.Map(document.getElementById('map-a'), option1);
     var mapB = new google.maps.Map(document.getElementById('map-b'), option2);
@@ -51,7 +55,7 @@ function initMap() {
     // Set the string of content into infoWindow
     var contentStringA =
         '<div>' +
-        '<h2>Philodendron White Knight</h2>' +
+        '<h5>Philodendron White Knight</h5>' +
         '<div>' +
         '<p>This rare beauty is native to the tropical forests of South America</p>' +
         '</div>' +
@@ -85,7 +89,7 @@ function initMap() {
     // Set the string of content into infoWindow
     var contentStringB =
         '<div>' +
-        '<h2>Monstera Thai Constellation</h2>' +
+        '<h5>Monstera Thai Constellation</h5>' +
         '<div>' +
         '<p>As not in case of its relatives, this special beauty found its birth in a laboratory in Thailand</p>' +
         '</div>' +
@@ -118,7 +122,7 @@ function initMap() {
     // Set the string of content into infoWindow
     var contentStringC =
         '<div>' +
-        '<h2>Philodendron White Princess</h2>' +
+        '<h5>Philodendron White Princess</h5>' +
         '<div>' +
         '<p>The home of this eye-catching beauty is in rainforests of South America</p>' +
         '</div>' +
@@ -151,7 +155,7 @@ function initMap() {
     // Set the string of content into infoWindow
     var contentStringD =
         '<div>' +
-        '<h2>Philodendron Pink Princess</h2>' +
+        '<h5>Philodendron Pink Princess</h5>' +
         '<div>' +
         '<p>Rainforests of Ecuador and Colombia are places where you would find this trendy plant growing wildly.</p>' +
         '</div>' +
@@ -184,7 +188,7 @@ function initMap() {
     // Set the string of content into infoWindow
     var contentStringE =
         '<div>' +
-        '<h2>Syngonium Confetti</h2>' +
+        '<h5>Syngonium Confetti</h5>' +
         '<div>' +
         '<p>Syngonium Confetti likes to climb up to 20 meters on trees and its native area is the whole Central and South America.</p>' +
         '</div>' +
@@ -217,7 +221,7 @@ function initMap() {
     // Set the string of content into infoWindow
     var contentStringF =
         '<div>' +
-        '<h2>Monstera Albo</h2>' +
+        '<h5>Monstera Albo</h5>' +
         '<div>' +
         '<p>You would find it very difficult to see this variegated form in free nature as it is so rare. The green form is could be seen in forests of Central and South America.</p>' +
         '</div>' +
@@ -250,7 +254,7 @@ function initMap() {
     // Set the string of content into infoWindow
     var contentStringG =
         '<div>' +
-        '<h2>Syngonium Podophyllum Albo</h2>' +
+        '<h5>Syngonium Podophyllum Albo</h5>' +
         '<div>' +
         '<p>You would mostly find Syngonium Albo in tropical forests of Central America.</p>' +
         '</div>' +

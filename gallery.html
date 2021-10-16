@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <div id="main-heading">
+                        <h1>
+                            Rare Tropical Plants
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-12 col-sm-2 sticky-top menu">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a id="home" class="nav-link" href="#index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Plants
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="philodendron dropdown-item">Philodendrons</a>
+                                <a class="monsteras dropdown-item">Monsteras</a>
+                                <a class="syngonium dropdown-item" href="#">Syngonium</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#gallery.html">Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Gallery - https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp -->
+                <div class="col-12 col-sm-10 main-content1">
+                    <div class="row">
+                        <div class="col-4 col-sm-6">
+                            <img src="img_nature.jpg" alt="Nature" onclick="myFunction(this);">
+                        </div>
+                        <div class="col-4 col-sm-6">
+                            <img src="img_snow.jpg" alt="Snow" onclick="myFunction(this);">
+                        </div>
+                        <div class="col-4 col-sm-6">
+                            <img src="img_mountains.jpg" alt="Mountains" onclick="myFunction(this);">
+                        </div>
+                        <div class="col-4 col-sm-6">
+                            <img src="img_lights.jpg" alt="Lights" onclick="myFunction(this);">
+                        </div>
+                    </div>
+
+                    <!-- The expanding image container -->
+                    <div class="container">
+                        <!-- Close the image -->
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+                        <!-- Expanded image -->
+                        <img id="expandedImg" style="width:100%">
+
+                        <!-- Image text -->
+                        <div id="imgtext"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-12 footer-style">
+                    <ul class="list-inline social-links">
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.tradera.com/en/profile/feedback/5186836/sunnygreenforest"
+                                target="_blank">
+                                <img src="assets/images/tradera-logo.jpg" alt="Logo tradera">
+                                <span class="sr-only">Tradera</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- following 3 links(jquery-3.3.1., popper.js, bootstrap.min.js) bellow copied from Bootstrap to support among other things Bootstrap components as Bootstrap Dropdown -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnGy5Xb33_3k-h6ddDVVzskCkYqE3vKjc&callback=initMap">
+    </script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/maps.js"></script>
+    
+
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnGy5Xb33_3k-h6ddDVVzskCkYqE3vKjc&callback=initMap">
+    </script>
+</body>
+
+</html>

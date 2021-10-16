@@ -215,11 +215,12 @@ $(document).ready(function () {
 
 
     $('.dropdown-item').click(function () {
+        
         if ($(this).hasClass('philodendron')) {
             /*let plantA = $('main-content1').children('div').hide();    this variable was not needed at the end*/
             $('.media').filter('.syngo,.monstera').hide();
             $('.media').filter('.philo').show();
-
+            
 
             //alert('hapa');  Here I need the code to see only divs having the class criteria
         } else if ($(this).hasClass('monsteras')) {
@@ -233,7 +234,7 @@ $(document).ready(function () {
         } else {
             alert('Something went wrong! Refresh your page.');
         }
-
+        // $('.drop-active').addClass('.active');
 
     });
 
@@ -249,6 +250,7 @@ $(document).ready(function () {
     });
     //$(window).scrollTop();//it worked on one element, but javascript doesn't responde now.
 
-
+    
+    
 
 });

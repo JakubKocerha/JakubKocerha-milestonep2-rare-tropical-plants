@@ -6,7 +6,8 @@
 correct sizing of target elements - https://developers.google.com/maps/documentation/javascript/overview */
 
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -30,15 +31,15 @@ body {
 
 #main-heading {
     background-image: url("../images/hero.jpg");
-    background-color:rgba(0, 0, 0, 0.5);
-    color:rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
     height: 300px;
-  /* Code taken from CI tutorial*/
+    /* Code taken from CI tutorial*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    
+
 }
 
 h1 {
@@ -47,7 +48,7 @@ h1 {
     color: rgb(255, 255, 255);
     height: 300px;
     font-weight: 400;
-  
+
 
     text-align: center;
     margin: 0 auto;
@@ -58,6 +59,9 @@ h1 {
 /* Navbar */
 .menu {
     background-color: rgba(201, 141, 81, 0.9);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 500px;
     padding: 0;
     border-right: 2px solid rgb(248 248 255);
@@ -65,14 +69,14 @@ h1 {
 
 .nav li {
     width: 100%;
-    
+
 }
 
 .nav-link {
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: rgb(255, 255, 255);
     background-color: rgba(90, 64, 38, 0.5);
 }
@@ -81,10 +85,12 @@ h1 {
     background-color: rgb(244, 232, 220);
 }
 
-.dropdown-item:focus, .dropdown-item:hover {
+.dropdown-item:focus,
+.dropdown-item:hover {
     color: rgb(244, 232, 220);
     background-color: #c98d51;
 }
+
 .active {
     background-color: rgba(161, 109, 56, 0.5);
     color: rgb(255, 255, 255);
@@ -96,18 +102,35 @@ h1 {
 }
 
 .main-content1 {
-    background-color:rgb(250, 228, 203);
+    background-color: rgb(250, 228, 203);
     min-height: 500px;
     padding-bottom: 15px;
-    color:rgba(0, 0, 0);
-    
+    color: rgba(0, 0, 0);
+
     border-bottom: 2px solid rgb(248 248 255);
     border-top: 2px solid rgb(248 248 255);
+}
+
+
+.main-head {
+    margin-bottom: 4rem;
+}
+
+.main-head a {
+    color: rgba(255, 0, 0, 1);
+    text-decoration: none;
+}
+
+
+.main {
+    text-align: center;
+    margin: 20px;
 }
 
 .media img {
     padding-left: 15px;
 }
+
 .media-body {
     padding-left: 20px;
     padding-right: 20px;
@@ -121,6 +144,7 @@ h1 {
     padding-left: 30px;
     letter-spacing: 5px;
 }
+
 /* Plant details */
 .details-wk,
 .details-co,
@@ -173,13 +197,15 @@ h1 {
 .button-mo-al,
 .button-sy-al {
     background-color: rgba(206, 152, 98, 0.9);
-    color:rgb(255, 255, 255);
-    display: none; 
+    color: rgb(255, 255, 255);
+    display: none;
 }
+
 /* CSS for icons*/
 .icon-col {
-    color:rgba(68, 167, 65, 0.671);
+    color: rgba(68, 167, 65, 0.671);
 }
+
 /* Google Maps  */
 
 #map-a,
@@ -198,7 +224,7 @@ h1 {
 
 /* footer styling */
 .footer-style {
-    background-color:rgba(201, 141, 81, 0.9);
+    background-color: rgba(201, 141, 81, 0.9);
     padding: 0;
 }
 
@@ -228,12 +254,12 @@ h1 {
     }
 
     /*fullwidth inline navbar menu for small devices for small devices, with a help of Crome tools*/
-    .nav li{
+    .nav li {
         display: inline;
         width: 25%;
         text-align: center;
     }
-    
+
     .menu {
         min-height: 40px;
         max-height: 40px;
@@ -242,24 +268,25 @@ h1 {
 }
 
 @media only screen and (max-width: 365px) {
-    .nav li{
+    .nav li {
         display: inline;
         width: 50%;
         text-align: center;
     }
+
     .menu {
         min-height: 80px;
         max-height: 80px;
         border-right: none;
     }
-    
+
     /*flex direction used as suggestion from Google DevTools */
     .media {
         flex-direction: column;
     }
+
     .media-body h4 {
         text-align: center;
-        
+
     }
 }
-    
