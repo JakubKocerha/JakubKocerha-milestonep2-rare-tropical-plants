@@ -209,9 +209,7 @@ h1 {
     text-align: center;
 }
 
-
-/* JS classes*/
-
+/* Buttons for opening of content item */
 .button-gen,
 .button-thai,
 .button-pr-wh,
@@ -297,6 +295,22 @@ h1 {
     font-size: 35px;
     cursor: pointer;
   }
+
+
+  /* Contact form */
+.contact-btn {
+    background-color: rgba(206, 152, 98, 0.9);
+    color: rgb(255, 255, 255);
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
 
 
 /* footer styling */
