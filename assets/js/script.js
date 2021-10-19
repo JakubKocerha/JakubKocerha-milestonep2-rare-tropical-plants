@@ -13,7 +13,7 @@ $(document).ready(function () {
     });
 
     $('.hide-knight').click(function () {
-        // button click hides button and opens default info about the plant
+        // button opens info details about the plant
         $('.button-gen').hide();
         //appends details about plant
         $('.knight-p').show();
@@ -27,7 +27,7 @@ $(document).ready(function () {
         // triggers default info about the plant onmouse leave
         $('.knight-p').show();
         $('.button-gen').hide();
-        $('.details-wk').hide(); //erases the info appended in click function
+        $('.details-wk').hide();
         $('.white-kn').css('background-color', 'transparent');
     });
 
@@ -44,9 +44,8 @@ $(document).ready(function () {
     });
 
     $('.hide-thai').click(function () {
-        // button click hides button and opens default info about the plant
+        // button opens info details about the plant
         $('.button-thai').hide();
-        //appends details about plant
         $('.thai-p').show();
         $('.details-co').show();
         $('.close-window').click(function () {
@@ -58,7 +57,7 @@ $(document).ready(function () {
         // triggers default info about the plant onmouse leave
         $('.thai-p').show();
         $('.button-thai').hide();
-        $('.details-co').hide(); //erases the info appended in click function
+        $('.details-co').hide();
         $('.thai-co').css('background-color', 'transparent');
     });
 
@@ -73,9 +72,8 @@ $(document).ready(function () {
     });
 
     $('.hide-whpr').click(function () {
-        // button click hides button and opens default info about the plant
+        // button opens info details about the plant
         $('.button-pr-wh').hide();
-        //appends details about plant
         $('.princess-wh-p').show();
         $('.details-wh').show();
         $('.close-window').click(function () {
@@ -87,7 +85,7 @@ $(document).ready(function () {
         // triggers default info about the plant onmouse leave
         $('.princess-wh-p').show();
         $('.button-pr-wh').hide();
-        $('.details-wh').hide(); //erases the info appended in click function
+        $('.details-wh').hide();
         $('.princess-wh').css('background-color', 'transparent');
     });
 
@@ -102,9 +100,8 @@ $(document).ready(function () {
     });
 
     $('.hide-pipr').click(function () {
-        // button click hides button and opens default info about the plant
+        // button opens info details about the plant
         $('.button-pr-pi').hide();
-        //appends details about plant
         $('.princess-pi-p').show();
         $('.details-pi').show();
         $('.close-window').click(function () {
@@ -116,7 +113,7 @@ $(document).ready(function () {
         // triggers default info about the plant onmouse leave
         $('.princess-pi-p').show();
         $('.button-pr-pi').hide();
-        $('.details-pi').hide(); //erases the info appended in click function
+        $('.details-pi').hide();
         $('.princess-pi').css('background-color', 'transparent');
     });
 
@@ -131,9 +128,8 @@ $(document).ready(function () {
     });
 
     $('.hide-syco').click(function () {
-        // button click hides button and opens default info about the plant
+        // button opens info details about the plant
         $('.button-sy-co').hide();
-        //appends details about plant
         $('.syngonium-co-p').show();
         $('.details-sc').show();
         $('.close-window').click(function () {
@@ -145,7 +141,7 @@ $(document).ready(function () {
         // triggers default info about the plant onmouse leave
         $('.syngonium-co-p').show();
         $('.button-sy-co').hide();
-        $('.details-sc').hide(); //erases the info appended in click function
+        $('.details-sc').hide();
         $('.syngonium-co').css('background-color', 'transparent');
     });
 
@@ -160,9 +156,8 @@ $(document).ready(function () {
     });
 
     $('.hide-moal').click(function () {
-        // button click hides button and opens default info about the plant
+        // button opens info details about the plant
         $('.button-mo-al').hide();
-        //appends details about plant
         $('.monstera-al-p').show();
         $('.details-al').show();
         $('.close-window').click(function () {
@@ -174,7 +169,7 @@ $(document).ready(function () {
         // triggers default info about the plant onmouse leave
         $('.monstera-al-p').show();
         $('.button-mo-al').hide();
-        $('.details-al').hide(); //erases the info appended in click function
+        $('.details-al').hide();
         $('.monstera-al').css('background-color', 'transparent');
     });
 
@@ -189,9 +184,8 @@ $(document).ready(function () {
     });
 
     $('.hide-syal').click(function () {
-        // button click hides button and opens default info about the plant
+        // button opens info details about the plant
         $('.button-sy-al').hide();
-        //appends details about plant
         $('.syngonium-al-p').show();
         $('.details-sa').show();
         $('.close-window').click(function () {
@@ -203,7 +197,7 @@ $(document).ready(function () {
         // triggers default info about the plant onmouse leave
         $('.syngonium-al-p').show();
         $('.button-sy-al').hide();
-        $('.details-sa').hide(); //erases the info appended in click function
+        $('.details-sa').hide();
         $('.syngonium-al').css('background-color', 'transparent');
     });
 
@@ -215,7 +209,6 @@ $(document).ready(function () {
         $('.dropdown').addClass('active');
         // filters for dropdown items
         if ($(this).hasClass('philodendron')) {
-            /*let plantA = $('main-content1').children('div').hide();    this variable was not needed at the end*/
             $('.media').filter('.syngo,.monstera').hide();
             $('.media').filter('.philo').show();
         } else if ($(this).hasClass('monsteras')) {
@@ -230,10 +223,8 @@ $(document).ready(function () {
         
     });
 
-    $('#home').click(function () { 
-        /*$('.media').filter('.syngo,.monstera,.philo').show();//Here I need a default(homepage content of .media class) content of all divs.*/ 
-        location.reload(0); // on stackoverflow.com shorcut for filter above.  
-        //$(window).scrollTop();//it worked on one element, but javascript doesn't responde now.
+    $('#home').click(function () {
+        location.reload(0); // on stackoverflow.com shorcut for filter above.
     });
 
 

@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=MonteCarlo&family=Oswald&display=swap');
 
 
-
 /* #map target div for Google maps and body/html style for 
 correct sizing of target elements - https://developers.google.com/maps/documentation/javascript/overview */
-
-
 html,
 body {
     height: 100%;
@@ -13,18 +10,10 @@ body {
     padding: 0;
 }
 
-
 /* font for the main content of the site */
 body {
     font-family: Oswald, sans-serif;
 }
-
-
-
-
-
-
-
 
 
 /* main header */
@@ -61,8 +50,6 @@ h1 {
     color: rgb(255, 255, 255);
     height: 300px;
     font-weight: 400;
-
-
     text-align: center;
     margin: 0 auto;
     padding: 15px;
@@ -70,6 +57,7 @@ h1 {
 }
 
 /* Navbar */
+
 .menu {
     background-color: rgba(201, 141, 81);
     background-position: center;
@@ -110,6 +98,7 @@ h1 {
 }
 
 /* main section of the site */
+
 .container-fluid {
     padding: 0;
 }
@@ -119,7 +108,6 @@ h1 {
     min-height: 200px;
     padding-bottom: 15px;
     color: rgba(0, 0, 0);
-
     border-bottom: 2px solid rgb(248 248 255);
     border-top: 2px solid rgb(248 248 255);
 }
@@ -138,12 +126,9 @@ h1 {
     text-decoration: none;
 }
 
-
 .main-head a:hover {
     font-size: 150%;
 }
-
-
 
 .main {
     text-align: center;
@@ -209,7 +194,7 @@ h1 {
     text-align: center;
 }
 
-/* Buttons for opening of content item */
+/* Buttons to open content items */
 .button-gen,
 .button-thai,
 .button-pr-wh,
@@ -241,9 +226,24 @@ h1 {
     color: black;
 }
 
+/* Contact form */
+.contact-btn {
+    background-color: rgba(206, 152, 98, 0.9);
+    color: rgb(255, 255, 255);
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
 /* Gallery - style taken from https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp*/
 
-/* The grid: Four equal columns that floats next to each other */
+/* The grid: Four equal columns float next to each other */
 .gallery-style {
     float: left;
     width: 25%;
@@ -297,23 +297,9 @@ h1 {
   }
 
 
-  /* Contact form */
-.contact-btn {
-    background-color: rgba(206, 152, 98, 0.9);
-    color: rgb(255, 255, 255);
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
+  
+/* footer style */
 
-.form-group {
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-
-
-/* footer styling */
 .footer-style {
     background-color: rgba(201, 141, 81);
     padding: 0;
@@ -371,7 +357,6 @@ h1 {
         border-right: none;
     }
 
-    /*flex direction used as suggestion from Google DevTools */
     .media {
         flex-direction: column;
     }

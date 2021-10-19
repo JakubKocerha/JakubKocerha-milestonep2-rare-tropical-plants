@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rare tropical plants and how to take care of them.">
+    <meta name="keywords" content="Rare plants, variegated plants">
+    <meta name="author" content="Jakub Kocerha">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         type="text/css" />
@@ -45,9 +48,10 @@
                                 Plants
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a id="ph1" class="philodendron dropdown-item" href="#">Philodendrons</a>
-                                <a class="monsteras dropdown-item" href="#">Monsteras</a>
-                                <a class="syngonium dropdown-item" href="#">Syngonium</a>
+                                <!-- href and title from https://stackoverflow.com/questions/5637969/is-an-empty-href-valid -->
+                                <a class="philodendron dropdown-item" href="javascript:void(0);" title="Go to linked content">Philodendrons</a>
+                                <a class="monsteras dropdown-item" href="javascript:void(0);" title="Go to linked content">Monsteras</a>
+                                <a class="syngonium dropdown-item" href="javascript:void(0);" title="Go to linked content">Syngonium</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -64,7 +68,9 @@
                             <h2 class="mr-2 ml-2 mb-sm-3 mt-sm-5">
                                 Learn more about how to take care of your unique plants!
                             </h2>
-                            <a class="mr-3 ml-3" href="https://www.tradera.com/en/profile/feedback/5186836/sunnygreenforest" target="_blank">
+                            <a class="mr-3 ml-3"
+                                href="https://www.tradera.com/en/profile/feedback/5186836/sunnygreenforest"
+                                target="_blank">
                                 <em>Win one of our plant auctions and get free shipping</em>
                             </a>
 
@@ -166,6 +172,7 @@
                                     Deliciosas is in southern Mexico and Panama. However, the Thai Constellation,
                                     as its name suggests, comes from laboratories in Thailand.
                                 </p>
+
 
 
                                 <!-- Interactive content - interactive content-->
@@ -306,7 +313,6 @@
                             </div>
                         </div>
 
-
                         <div class="col-12 mt-3 philo princess-pi media">
                             <img src="assets/images/pink-princess-media.jpg" class="mr-3"
                                 alt="Philodendron Pink Princess">
@@ -376,9 +382,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-
 
                         <div class="col-12 mt-3 syngo syngonium-co media">
                             <img src="assets/images/syngonium-confetti-media.jpg" class="mr-3" alt="Syngonium Confetti">
@@ -522,7 +525,6 @@
                             </div>
                         </div>
 
-
                         <div class="col-12 mt-3 syngo syngonium-al media">
                             <img src="assets/images/syngonium-albo-media.jpg" class="mr-3"
                                 alt="Syngonium Podophyllum Albo">
@@ -612,7 +614,8 @@
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="https://www.tradera.com/en/profile/feedback/5186836/sunnygreenforest" target="_blank">
+                            <a href="https://www.tradera.com/en/profile/feedback/5186836/sunnygreenforest"
+                                target="_blank">
                                 <img src="assets/images/tradera-logo.jpg" alt="Logo tradera">
                                 <span class="sr-only">Tradera</span>
                             </a>
@@ -628,7 +631,8 @@
             </div>
         </div>
     </footer>
-    <!-- following 3 links(jquery-3.3.1., popper.js, bootstrap.min.js) bellow copied from Bootstrap to support among other things Bootstrap components as Bootstrap Dropdown -->
+    
+    <!-- following 3 links(jquery-3.3.1., popper.js, bootstrap.min.js) below copied from Bootstrap to support Bootstrap components as Bootstrap Dropdown -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -643,7 +647,7 @@
     </script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/maps.js"></script>
-
+    <script src="assets/js/gallery.js"></script>
 </body>
 
 </html>

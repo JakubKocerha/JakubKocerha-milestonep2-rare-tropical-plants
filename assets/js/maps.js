@@ -5,55 +5,55 @@ function initMap() {
     // Maps initial options for different containers 
     // var option* content from youtube.com https://www.youtube.com/watch?v=Zxf1mnP5zcw&t=96s - Traversy media
     // default map view of North/South America
-    var option1 = {
+    const option1 = {
         zoom: 3,
         center: {lat: 11.8527, lng: -71.0000}
     };
 
     // default map view of South-East Asia
-    var option2 = {
+    const option2 = {
         zoom: 3,
         center: {lat: 14.4319, lng: 101.3948}
     };
 
      // default map view of South America
-    var option3 = {
+    const option3 = {
         zoom: 3,
         center: {lat: 1.623183, lng:  -71.141397}
     };
 
     // default map view of South America
-    var option4 = {
+    const option4 = {
         zoom: 3,
         center: {lat: 1.623183, lng:  -71.141397}
     };
 
-    var option5 = {
+    const option5 = {
         zoom: 3,
         center: {lat: 11.340078, lng:  -84.863427}
     };
 
-    var option6 = {
+    const option6 = {
         zoom: 3,
         center: {lat: 15.478299, lng:  -87.009321}
     }; 
-    var option7 = {
+    const option7 = {
         zoom: 3,
         center: {lat: 14.437863, lng:  -84.752535}
     };
 
-    // The rest of the content bellow coded with a sample on Google API - documentation
-    // New map for each container
-    var mapA = new google.maps.Map(document.getElementById('map-a'), option1);
-    var mapB = new google.maps.Map(document.getElementById('map-b'), option2);
-    var mapC = new google.maps.Map(document.getElementById('map-c'), option3);
-    var mapD = new google.maps.Map(document.getElementById('map-d'), option4);
-    var mapE = new google.maps.Map(document.getElementById('map-e'), option5);
-    var mapF = new google.maps.Map(document.getElementById('map-f'), option6);
-    var mapG = new google.maps.Map(document.getElementById('map-g'), option7);
+    // Coded with a samples on Google API - documentation
+    // A map for each container
+    const mapA = new google.maps.Map(document.getElementById('map-a'), option1);
+    const mapB = new google.maps.Map(document.getElementById('map-b'), option2);
+    const mapC = new google.maps.Map(document.getElementById('map-c'), option3);
+    const mapD = new google.maps.Map(document.getElementById('map-d'), option4);
+    const mapE = new google.maps.Map(document.getElementById('map-e'), option5);
+    const mapF = new google.maps.Map(document.getElementById('map-f'), option6);
+    const mapG = new google.maps.Map(document.getElementById('map-g'), option7);
 
     // Set the string of content into infoWindow
-    var contentStringA =
+    const contentStringA =
         '<div>' +
         '<h5>Philodendron White Knight</h5>' +
         '<div>' +
@@ -62,18 +62,17 @@ function initMap() {
         '</div>';
 
     // Google Apis documentation - Setting infowndow with contentString variable
-    var infoWindowA = new google.maps.InfoWindow({
+    const infoWindowA = new google.maps.InfoWindow({
         content: contentStringA
     });
     // Add marker for a map
-    var markerA = new google.maps.Marker({
+    const markerA = new google.maps.Marker({
         position: {
             lat: 11.852733,
             lng: -71.0000
         },
         map: mapA,
-        title: "Philodendron White Knight" // parameter of the map we have just created with var map
-        // map: other div element
+        title: "Philodendron White Knight" 
     });
 
     // listener triggering onclick function, rendering infoWindow
@@ -87,7 +86,7 @@ function initMap() {
 
 
     // Set the string of content into infoWindow
-    var contentStringB =
+    const contentStringB =
         '<div>' +
         '<h5>Monstera Thai Constellation</h5>' +
         '<div>' +
@@ -96,18 +95,17 @@ function initMap() {
         '</div>';
 
     // Google Apis documentation - Setting infowndow with contentString variable
-    var infoWindowB = new google.maps.InfoWindow({
+    const infoWindowB = new google.maps.InfoWindow({
         content: contentStringB
     });
     // Add marker for a map
-    var markerB = new google.maps.Marker({
+    const markerB = new google.maps.Marker({
         position: {
             lat: 14.431932,
             lng: 101.394869
         },
         map: mapB,
-        title: "Mostera Thai Constellation" // parameter of the map we have just created with var map
-        // map: other div element
+        title: "Mostera Thai Constellation"
     });
 
     // listener triggering onclick function, rendering infoWindow
@@ -120,7 +118,7 @@ function initMap() {
     });
 
     // Set the string of content into infoWindow
-    var contentStringC =
+    const contentStringC =
         '<div>' +
         '<h5>Philodendron White Princess</h5>' +
         '<div>' +
@@ -129,18 +127,17 @@ function initMap() {
         '</div>';
 
     // Google Apis documentation - Setting infowndow with contentString variable
-    var infoWindowC = new google.maps.InfoWindow({
+    const infoWindowC = new google.maps.InfoWindow({
         content: contentStringC
     });
     // Add marker for a map
-    var markerC = new google.maps.Marker({
+    const markerC = new google.maps.Marker({
         position: {
             lat: 1.623183,
             lng:  -71.141397
         },
         map: mapC,
-        title: "Philodendron White Princess" // parameter of the map we have just created with var map
-        // map: other div element
+        title: "Philodendron White Princess"
     });
 
     // listener triggering onclick function, rendering infoWindow
@@ -153,7 +150,7 @@ function initMap() {
     });
 
     // Set the string of content into infoWindow
-    var contentStringD =
+    const contentStringD =
         '<div>' +
         '<h5>Philodendron Pink Princess</h5>' +
         '<div>' +
@@ -162,18 +159,17 @@ function initMap() {
         '</div>';
 
     // Google Apis documentation - Setting infowndow with contentString variable
-    var infoWindowD = new google.maps.InfoWindow({
+    const infoWindowD = new google.maps.InfoWindow({
         content: contentStringD
     });
     // Add marker for a map
-    var markerD = new google.maps.Marker({
+    const markerD = new google.maps.Marker({
         position: {
             lat: 1.623183,
             lng:  -71.141397
         },
         map: mapD,
-        title: "Philodendron Pink Princess" // parameter of the map we have just created with var map
-        // map: other div element
+        title: "Philodendron Pink Princess"
     });
 
     // listener triggering onclick function, rendering infoWindow
@@ -186,7 +182,7 @@ function initMap() {
     });
 
     // Set the string of content into infoWindow
-    var contentStringE =
+    const contentStringE =
         '<div>' +
         '<h5>Syngonium Confetti</h5>' +
         '<div>' +
@@ -195,18 +191,17 @@ function initMap() {
         '</div>';
 
     // Google Apis documentation - Setting infowndow with contentString variable
-    var infoWindowE = new google.maps.InfoWindow({
+    const infoWindowE = new google.maps.InfoWindow({
         content: contentStringE
     });
     // Add marker for a map
-    var markerE = new google.maps.Marker({
+    const markerE = new google.maps.Marker({
         position: {
             lat: 1.623183,
             lng:  -71.141397
         },
         map: mapE,
-        title: "Syngonium Confetti" // parameter of the map we have just created with var map
-        // map: other div element
+        title: "Syngonium Confetti"
     });
 
     // listener triggering onclick function, rendering infoWindow
@@ -219,7 +214,7 @@ function initMap() {
     });
 
     // Set the string of content into infoWindow
-    var contentStringF =
+    const contentStringF =
         '<div>' +
         '<h5>Monstera Albo</h5>' +
         '<div>' +
@@ -228,18 +223,17 @@ function initMap() {
         '</div>';
 
     // Google Apis documentation - Setting infowndow with contentString variable
-    var infoWindowF = new google.maps.InfoWindow({
+    const infoWindowF = new google.maps.InfoWindow({
         content: contentStringF
     });
     // Add marker for a map
-    var markerF = new google.maps.Marker({
+    const markerF = new google.maps.Marker({
         position: {
             lat: 15.478299,
             lng:  -87.009321
         },
         map: mapF,
-        title: "Monstera Albo" // parameter of the map we have just created with var map
-        // map: other div element
+        title: "Monstera Albo"
     });
     
     // listener triggering onclick function, rendering infoWindow
@@ -252,7 +246,7 @@ function initMap() {
     });
 
     // Set the string of content into infoWindow
-    var contentStringG =
+    const contentStringG =
         '<div>' +
         '<h5>Syngonium Podophyllum Albo</h5>' +
         '<div>' +
@@ -261,18 +255,17 @@ function initMap() {
         '</div>';
 
     // Google Apis documentation - Setting infowndow with contentString variable
-    var infoWindowG = new google.maps.InfoWindow({
+    const infoWindowG = new google.maps.InfoWindow({
         content: contentStringG
     });
     // Add marker for a map
-    var markerG = new google.maps.Marker({
+    const markerG = new google.maps.Marker({
         position: {
             lat: 14.437863,
             lng:  -84.752535
         },
         map: mapG,
-        title: "Syngonium Podophyllum Albo" // parameter of the map we have just created with var map
-        // map: other div element
+        title: "Syngonium Podophyllum Albo"
     });
     
     // listener triggering onclick function, rendering infoWindow
