@@ -1,6 +1,3 @@
-
-
-
 function initMap() {
     // Maps initial options for different containers 
     // var option* content from youtube.com https://www.youtube.com/watch?v=Zxf1mnP5zcw&t=96s - Traversy media

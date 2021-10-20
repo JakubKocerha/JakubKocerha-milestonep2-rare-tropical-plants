@@ -330,7 +330,7 @@ h1 {
         letter-spacing: 5px;
     }
 
-    /*fullwidth inline navbar menu for small devices for small devices, with a help of Crome tools*/
+    /* full width inline navbar menu for small devices with a help of Crome Dev tools suggestion*/
     .nav li {
         display: inline;
         width: 25%;
