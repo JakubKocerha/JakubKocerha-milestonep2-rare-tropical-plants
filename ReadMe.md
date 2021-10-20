@@ -47,34 +47,33 @@
 
 ?
 
+
+
+
+
+
 - __The landing page__
     - Due to the primary purpose of the site, providing helpful information to house plant growers, the landing page offers the list of featured plants and their basic information directly to make the purpose of the site clear.
     - Every item of the list is interactive, reacts to the mouse's position over the element, offering a button. When the user clicks the button element, the item container shows the details, information about plant care, and a map showing the original habitat. It reacts on mouse leave that closes detailed container to the default state of the item in the list. 
     - The hero image uses CSS animation styles to shrink when the page is loading. 
     - As a template for the listed plants, Bootstrap Media heading is used.
-
-    -fill correct link-
-    ![Nav bar](https://github.com/JakubKocerha/milestonep1-my-arctic-life/blob/master/readme-media/navbar.jpg)
+    ![Home page](https://github.com/JakubKocerha/JakubKocerha-milestonep2-rare-tropical-plants/blob/main/readme-media/landingp.jpg)
 
 
 - __Footer__
     - The footer is designed simply with three Icons linked to social media and plant auctions of the site provider.
-
-
-    -fill correct link-
-    ![Footer](https://github.com/JakubKocerha/milestonep1-my-arctic-life/blob/master/readme-media/footer.jpg)
+    ![Footer](https://github.com/JakubKocerha/JakubKocerha-milestonep2-rare-tropical-plants/blob/main/readme-media/footer.jpg)
 
 - __The Contact page__
     - The contact form offers direct contact with the site provider via a form. Therefore the user has a chance to ask additional questions related to the content. 
     - The form uses "emailjs" API and sends email according to the parameters set in emailjs account.
     - The form alerts the user about the success or failure of the sent email.
-
-    ![Back to top button](https://github.com/JakubKocerha/milestonep1-my-arctic-life/blob/master/readme-media/why-arctic.jpg)
+    ![Contact](https://github.com/JakubKocerha/JakubKocerha-milestonep2-rare-tropical-plants/blob/main/readme-media/contentp.jpg)
 
 
 - __The Gallery page__
     - Gallery provides a detailed view of the rare plants and their natural beauty. When a user clicks on the photo icon, the image fills the whole width of the container below it.
-
+    ![Gallery](https://github.com/JakubKocerha/JakubKocerha-milestonep2-rare-tropical-plants/blob/main/readme-media/galleryp.jpg)
 
 ### Features To Implement
     * More multimedia content(photos, videos).
@@ -132,8 +131,8 @@
         * [gallery.js](https://github.com/JakubKocerha/JakubKocerha-milestonep2-rare-tropical-plants/blob/main/assets/js/gallery.js)
             - No major issues found
         
-### Testing User Stories from User Experience (UX) Section
 
+### Testing User Stories from User Experience (UX) Section
 
 #### First Time visitor Goals
 - As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the plants of the presented person.
@@ -170,17 +169,9 @@ Report from [PageSpeedInsight](https://developers.google.com/speed/pagespeed/ins
 ### Wireframes
 - Links to wireframes below show the basic structure of each page on a mobile devices, tablet, and laptop.
 
-
-
-
-
-
-
-
-1. [Wireframe Home](https://github.com/JakubKocerha/milestonep1-my-arctic-life/blob/master/readme-media/page1-project1mainhome.png)
-2. [Wireframe Why Arctic?](https://github.com/JakubKocerha/milestonep1-my-arctic-life/blob/master/readme-media/page2-projec1twhyarctic.png)
-3. [Wireframe Life](https://github.com/JakubKocerha/milestonep1-my-arctic-life/blob/master/readme-media/page3-project1life.png)
-4. [Wireframe Join-me](https://github.com/JakubKocerha/milestonep1-my-arctic-life/blob/master/readme-media/page4-project1joinme.png)
+1. [Wireframe Home](https://github.com/JakubKocerha/JakubKocerha-milestonep2-rare-tropical-plants/blob/main/readme-media/Tropical_plants_home.png)
+2. [Wireframe Gallery](https://github.com/JakubKocerha/JakubKocerha-milestonep2-rare-tropical-plants/blob/main/readme-media/Tropical_plants_gallery.png)
+3. [Wireframe Contact](https://github.com/JakubKocerha/JakubKocerha-milestonep2-rare-tropical-plants/blob/main/readme-media/Tropical_plants_contact.png)
 
 ### Bugs and Debugging
 #### Bugs
