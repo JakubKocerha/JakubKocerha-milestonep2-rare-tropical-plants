@@ -76,9 +76,9 @@
     ![Gallery](https://github.com/JakubKocerha/JakubKocerha-milestonep2-rare-tropical-plants/blob/main/readme-media/galleryp.jpg)
 
 ### Features To Implement
-    * More multimedia content(photos, videos).
-    * More listed items(plants).
-    * E-shop - allowing visitors to buy a plant right on the web site. 
+* More multimedia content(photos, videos).
+* More listed items(plants).
+* E-shop - allowing visitors to buy a plant right on the web site. 
 
 ## Main technologies used
 * HTML5
@@ -112,8 +112,8 @@
     2. [contact.html W3C validator](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fjakubkocerha.github.io%2FJakubKocerha-milestonep2-rare-tropical-plants%2Fcontact.html)
         * No errors were returned.
         * Syntax warning about the used code. The used code is from CI tutorials and emailjs API samples. The code left unchanged as it works without any issue.
-    3. [gallery.html W3C validator](https://jakubkocerha.github.io/JakubKocerha-milestonep2-rare-tropical-plants/gallery.html)
-        * Error: Element img is missing required attribute src. Missing attribute due to expansion of the original picture. Alt assigned in the original img before expansion. alt="Expanded image" added. 
+    3. [gallery.html W3C validator](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fjakubkocerha.github.io%2FJakubKocerha-milestonep2-rare-tropical-plants%2Fgallery.html)
+        * Error: Element img is missing required attribute src. Missing attribute due to expansion of the original picture. Alt assigned in the original img before expansion. alt="Expanded image" added, error still appears 
     
 - CSS [W3C validator](https://jigsaw.w3.org/css-validator/)
     - Validation of the site URI deployed on Github [Rare Tropical Plants](https://     jakubkocerha.github.io/JakubKocerha-milestonep2-rare-tropical-plants/)
@@ -236,15 +236,19 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 - Nav links
 - Media object
 - Form
--`<Meta>` elements
-- Meta and stylesheets copied from [Code Institute tutorial](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+HE101+2020/courseware/fcc67a894619420399970ae84fc4802f/59591be08b13436ebe782f57967be07a/).
+- `<Meta>` elements
+- Meta and stylesheets copied from [Code Institute tutorial](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+HE101+2020/courseware/fcc67a894619420399970ae84fc4802f/59591be08b13436ebe782f57967be07a/)
+
 [w3schools](https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp)
 - Gallery
+
 [jQuery doc](https://jquery.com/)
 - Home page, Plants sorting
+
 [emailjs.com](https://www.emailjs.com/)
 - Email form
-[stackoverflow.com](https://stackoverflow.com/)
+
+[stackoverflow.com](https://www.stackoverflow.com/)
 - location.reload()
 
 ### Media
