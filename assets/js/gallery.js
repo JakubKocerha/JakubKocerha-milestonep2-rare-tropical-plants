@@ -12,3 +12,6 @@ function myFunction(imgs) {
     // Show the container element (hidden with CSS)
     expandImg.parentElement.style.display = "block";
 }
+
+
+$('.hide').remove();//removes nav Plants from menu

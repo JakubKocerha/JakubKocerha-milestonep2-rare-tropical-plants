@@ -17,3 +17,5 @@ function sendMail(contactForm) {
     ); 
     return false; 
 }
+
+$('.hide').remove();//removes nav Plants from menu

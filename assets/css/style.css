@@ -321,6 +321,10 @@ h1 {
 }
 
 @media only screen and (max-width: 575px) {
+    .main-head h2 {
+        margin-top: 3rem;
+    }
+    
     .media {
         flex-direction: column;
     }
@@ -335,6 +339,11 @@ h1 {
         display: inline;
         width: 25%;
         text-align: center;
+    }
+
+    #adjust1 li,
+    #adjust2 li {
+        width: 33%;
     }
 
     .menu {
@@ -355,6 +364,12 @@ h1 {
         min-height: 80px;
         max-height: 80px;
         border-right: none;
+    }
+
+    #nav-size1,
+    #nav-size2 {
+        min-height: 40px;
+        max-height: 40px;
     }
 
     .media {
