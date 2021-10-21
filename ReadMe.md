@@ -39,17 +39,11 @@
 ## Features
 
 ### Existing Features
-    - __Navigation Bar__
-    
-
-
-
-
-?
-
-
-
-
+- __Navigation Bar__
+    - The menu was designed to provide _Home page_, _Plants_(links sorting the home page's content with JS functions), _Contact_, and _Gallery_.
+    - Lower resolutions provide the navigation menu inline sticky position to the top when scrolling down. That gives the user a comfortable and easy way to move throughout sites.
+    - Item _Plants_ is invisible when the user clicks on contact.html and gallery.html. 
+    ![Nav](https://github.com/JakubKocerha/JakubKocerha-milestonep2-rare-tropical-plants/blob/main/readme-media/nav.jpg)
 
 
 - __The landing page__
